@@ -9,12 +9,20 @@ import { MainComponentWebsiteComponent } from './components/main-component-websi
 import { MatTabsModule } from '@angular/material/tabs';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutMeComponentComponent } from './components/about-me-component/about-me-component.component';
+import { ProfessionalExperienceComponentComponent } from './components/professional-experience-component/professional-experience-component.component';
+import { TrainingComponentComponent } from './components/training-component/training-component.component';
+import { SkillsAbilitiesComponentComponent } from './components/skills-abilities-component/skills-abilities-component.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponentWebsiteComponent
+    MainComponentWebsiteComponent,
+    AboutMeComponentComponent,
+    ProfessionalExperienceComponentComponent,
+    TrainingComponentComponent,
+    SkillsAbilitiesComponentComponent
   ],
   imports: [
     BrowserModule,
