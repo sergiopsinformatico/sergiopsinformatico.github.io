@@ -1,5 +1,8 @@
 .background-main-component{
-    background-color: #50F4FF;
     width: 100%;
     height: 100%;
+}
+
+:host ::ng-deep .background-main-component > mat-tab-group > mat-tab-header > div {
+    background: linear-gradient(70deg, #FF6B7A, #99CEFF, #99FFA7, #FAFF99);
 }

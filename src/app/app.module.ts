@@ -5,7 +5,11 @@ import { AppComponent } from './app.component';
 import { MyTranslateWebsiteService } from './service/my-translate-website.service';
 import { MainComponentWebsiteComponent } from './components/main-component-website/main-component-website.component';
 
-import { TabMenuModule } from 'primeng/tabmenu';
+//Import Material Angular
+import { MatTabsModule } from '@angular/material/tabs';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +18,8 @@ import { TabMenuModule } from 'primeng/tabmenu';
   ],
   imports: [
     BrowserModule,
-    TabMenuModule
+    MatTabsModule,
+    BrowserAnimationsModule
   ],
   providers: [MyTranslateWebsiteService],
   bootstrap: [AppComponent]
