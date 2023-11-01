@@ -1,0 +1,11 @@
+{
+    "label.chooseLanguage": "Elige el idioma: ",
+    "label.mainComponent.menu.aboutMe": "Sobre Mi",
+    "label.mainComponent.menu.training": "Formación",
+    "label.mainComponent.menu.professionalExperience": "Experiencia Profesional",
+    "label.mainComponent.menu.skillsAbilities": "Habilidades",
+    "label.aboutMe.presentation": "Me llamo Sergio Pérez Sánchez y soy Ingeniero Infomático",
+    "label.aboutMe.degree": "Estudié Grado en Ingeniería Informática (Mención en Ingeniería de Software) en la Escuela Superior de Informática (ESI) de Ciudad Real, UCLM",
+    "label.aboutMe.muii": "Estudié Master Universitario en Ingeniería Informática (MUII) en la Escuela Superior de Informática (ESI) de Ciudad Real, UCLM",
+    "label.aboutMe.work": "Actualmente trabajo en Minsait, an Indra Company"
+}

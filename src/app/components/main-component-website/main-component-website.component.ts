@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MyTranslateWebsiteService } from 'src/app/service/my-translate-website.service';
-import { MenuItem } from 'primeng/api/menuitem';
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-main-component-website',
@@ -13,8 +12,8 @@ export class MainComponentWebsiteComponent implements OnInit{
   //Variables
   mainTitle = "Mi Pagina Personal";
 
-  constructor(private theTranslate: MyTranslateWebsiteService){
-    
+  constructor(private translate: TranslateService){
+
   }
 
   ngOnInit(): void {
