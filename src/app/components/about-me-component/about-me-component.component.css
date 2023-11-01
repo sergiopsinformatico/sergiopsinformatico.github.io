@@ -10,3 +10,13 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+#aboutMeComponent .photoRRSSStyle{
+    margin-right: 10px;
+    height: 30px;
+    width: auto;
+}
+
+#aboutMeComponent .photoRRSSStyle:hover{
+    cursor: pointer;
+}

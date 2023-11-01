@@ -12,4 +12,8 @@ export class AboutMeComponentComponent {
 
   }
 
+  openTabUrl(urlLink: string){
+    window.open(urlLink, "_blank");
+  }
+
 }
