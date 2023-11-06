@@ -8,5 +8,11 @@
     "label.aboutMe.degree": "I studied a Degree in Computer Engineering (Mention in Software Engineering) at the Higher School of Computers (ESI) of Ciudad Real, UCLM",
     "label.aboutMe.muii": "I studied a Master's Degree in Computer Engineering (MUII) at the Higher School of Computers (ESI) of Ciudad Real, UCLM",
     "label.aboutMe.work": "I currently work at Minsait, an Indra Company",
-    "label.aboutMe.followMe": "You can follow me in:"
+    "label.aboutMe.followMe": "You can follow me in:",
+    "label.training.oficial.degree.title": "2020 - Degree in Computer Engineering",
+    "label.training.oficial.degree.subtitle": "Ciudad Real's Higher School of Computers (ESI) - UCLM",
+    "label.training.oficial.degree.content": "Mention in Software Engineering",
+    "label.training.oficial.master.title": "2023 - Master's Degree in Computer Engineering (MUII)",
+    "label.training.oficial.master.subtitle": "Ciudad Real's Higher School of Computers (ESI) - UCLM",
+    "label.training.oficial.master.content": "Master's Degree in Computer Engineering (MUII)"
 }

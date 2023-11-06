@@ -8,5 +8,11 @@
     "label.aboutMe.degree": "Estudié Grado en Ingeniería Informática (Mención en Ingeniería de Software) en la Escuela Superior de Informática (ESI) de Ciudad Real, UCLM",
     "label.aboutMe.muii": "Estudié Master Universitario en Ingeniería Informática (MUII) en la Escuela Superior de Informática (ESI) de Ciudad Real, UCLM",
     "label.aboutMe.work": "Actualmente trabajo en Minsait, an Indra Company",
-    "label.aboutMe.followMe": "Puedes seguirme en:"
+    "label.aboutMe.followMe": "Puedes seguirme en:",
+    "label.training.oficial.degree.title": "2020 - Grado en Ingeniería Informática",
+    "label.training.oficial.degree.subtitle": "Escuela Superior de Informática de Ciudad Real (ESI) - UCLM",
+    "label.training.oficial.degree.content": "Intensificación en Ingeniería de Software",
+    "label.training.oficial.master.title": "2023 - Máster Universitario en Ingeniería Informática (MUII)",
+    "label.training.oficial.master.subtitle": "Escuela Superior de Informática de Ciudad Real (ESI) - UCLM",
+    "label.training.oficial.master.content": "Máster Universitario en Ingeniería Informática (MUII)"
 }
