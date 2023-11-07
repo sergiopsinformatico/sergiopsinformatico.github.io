@@ -36,5 +36,15 @@
     "label.professionalExperience.forth.job": "Consultant",
     "label.professionalExperience.forth.company": "Minsait, An Indra Company (Indra)",
     "label.professionalExperience.forth.description": "Projects related to the Health Sector. Fullstack Developer",
-    "label.professionalExperience.forth.apptitude": "Angular, Typescript, HTML, CSS, Spring, Java, Product Development, Software Development, Project Training, Product Training"
+    "label.professionalExperience.forth.apptitude": "Angular, Typescript, HTML, CSS, Spring, Java, Product Development, Software Development, Project Training, Product Training",
+    "label.abbility.developmentAngular.name": "Project Development with Angular Framework",
+    "label.abbility.developmentAngular.description": "FrontEnd Project Development (Angular, Typescript, HTML and CSS)",
+    "label.abbility.trainingProjects.name": "Project Training",
+    "label.abbility.trainingProjects.description": "Training in Projects and Products for Clients and/or Deployment Managers",
+    "label.abbility.tests.name": "Development of Unit Test Frameworks",
+    "label.abbility.tests.description": "Development of Automated Tests and Tests (JUnit, Maven Surefire, Apache JMeter)",
+    "label.abbility.security.name": "Knowledge of Security and Access Mechanisms",
+    "label.abbility.security.description": "Knowledge of technologies such as OAuth and Keycloak",
+    "label.abbility.healthcare.name": "Technical Knowledge in Health IT Systems",
+    "label.abbility.healthcare.description": "FHIR HL7 (Fast Healthcare Interoperability Resource) Standard, CDA (Clinical Document Architecture) Standard and XDS (Cross Enterprise Document Sharing)"
 }

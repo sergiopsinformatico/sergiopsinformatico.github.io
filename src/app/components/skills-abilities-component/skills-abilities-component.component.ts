@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
+import { MyAppServicesService } from '../../service/my-app-services.service';
 
 @Component({
   selector: 'app-skills-abilities-component',
@@ -8,8 +9,13 @@ import {TranslateService} from "@ngx-translate/core";
 })
 export class SkillsAbilitiesComponentComponent {
 
-  constructor(private translate: TranslateService){
+  constructor(private translate: TranslateService,
+              private myAppService: MyAppServicesService){
 
+  }
+
+  getListAbbilities(){
+    return this.myAppService.getMyConfig().getListAbbilities();
   }
   
 }

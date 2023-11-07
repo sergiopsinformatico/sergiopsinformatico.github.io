@@ -1,1 +1,14 @@
-<p>skills-abilities-component works!</p>
+<div id="skillAbbilitiesComponent">
+    <ng-container *ngIf="getListAbbilities()">
+        <ng-container *ngFor="let eAbbility of getListAbbilities()">
+            <div>
+                <br>
+                <span class="subtitle-style margin-content-job">{{eAbbility.nameAbbility | translate}}</span>
+                <br>
+                <span class="margin-content-job">{{eAbbility.description | translate}}</span>
+                <br>
+            </div>
+            <br><br>
+        </ng-container>
+    </ng-container>
+</div>

@@ -1,0 +1,15 @@
+#skillAbbilitiesComponent .subtitle-style{
+    font-style: italic;
+}
+
+#skillAbbilitiesComponent .description-job{
+    margin-top: -20px;
+}
+
+#skillAbbilitiesComponent .margin-title-job{
+    margin-left: 40px;
+}
+
+#skillAbbilitiesComponent .margin-content-job{
+    margin-left: 80px;
+}

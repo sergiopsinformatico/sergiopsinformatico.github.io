@@ -42,5 +42,27 @@
             "description": "label.professionalExperience.first.description",
             "apptitude": "label.professionalExperience.first.apptitude"
         }    
+    ],
+    "listAbbilities":[
+        {
+            "nameAbbility": "label.abbility.developmentAngular.name",
+            "description": "label.abbility.developmentAngular.description"
+        },
+        {
+            "nameAbbility": "label.abbility.trainingProjects.name",
+            "description": "label.abbility.trainingProjects.description"
+        },
+        {
+            "nameAbbility": "label.abbility.tests.name",
+            "description": "label.abbility.tests.description"
+        },
+        {
+            "nameAbbility": "label.abbility.security.name",
+            "description": "label.abbility.security.description"
+        },
+        {
+            "nameAbbility": "label.abbility.healthcare.name",
+            "description": "label.abbility.healthcare.description"
+        }
     ]
 }

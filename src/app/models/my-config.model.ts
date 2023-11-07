@@ -16,4 +16,8 @@ export class MyConfigModel{
         return _.has(this.configObj, 'listExperiences') ? _.get(this.configObj, 'listExperiences') : null;
     }
 
+    getListAbbilities(){
+        return _.has(this.configObj, 'listAbbilities') ? _.get(this.configObj, 'listAbbilities') : null;
+    }
+
 }

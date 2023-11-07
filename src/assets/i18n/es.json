@@ -36,5 +36,15 @@
     "label.professionalExperience.forth.job": "Consultor",
     "label.professionalExperience.forth.company": "Minsait, An Indra Company (Indra)",
     "label.professionalExperience.forth.description": "Proyectos relacionados con el Sector de Sanidad. Desarrollador FullStack",
-    "label.professionalExperience.forth.apptitude": "Angular, Typescript, HTML, CSS, Spring, Java, Desarrollo de productos, Desarrollo de software, Formación en Proyecto, Formación en Producto"
+    "label.professionalExperience.forth.apptitude": "Angular, Typescript, HTML, CSS, Spring, Java, Desarrollo de productos, Desarrollo de software, Formación en Proyecto, Formación en Producto",
+    "label.abbility.developmentAngular.name": "Desarrollo de Proyectos con Framework Angular",
+    "label.abbility.developmentAngular.description": "Desarrollo de Proyectos FrontEnd (Angular, Typescript, HTML y CSS)",
+    "label.abbility.trainingProjects.name": "Formación en Proyectos",
+    "label.abbility.trainingProjects.description": "Formación en Proyectos y en Productos para Clientes y/o Responsables de Despliegues",
+    "label.abbility.tests.name": "Desarrollo de Frameworks de Test Unitarios",
+    "label.abbility.tests.description": "Desarrollo de Pruebas Automatizadas y Tests (JUnit, Maven Surefire, Apache JMeter)",
+    "label.abbility.security.name": "Conocimientos en Mecanismos de Seguridad y Acceso",
+    "label.abbility.security.description": "Conocimientos en tecnologías como OAuth y Keycloak",
+    "label.abbility.healthcare.name": "Conocimientos Técnicos en Sistemas Informáticos Sanitarios",
+    "label.abbility.healthcare.description": "Estándar FHIR HL7 (Fast Healthcare Interoperability Resource), Estándar CDA (Clinical Document Architecture) y XDS (Cross Enterprise Document Sharing)"
 }
