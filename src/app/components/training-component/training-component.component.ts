@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
+import { MyAppServicesService } from '../../service/my-app-services.service';
 
 @Component({
   selector: 'app-training-component',
@@ -8,8 +9,13 @@ import {TranslateService} from "@ngx-translate/core";
 })
 export class TrainingComponentComponent {
 
-  constructor(private translate: TranslateService){
+  constructor(private translate: TranslateService,
+              private myAppService: MyAppServicesService){
 
+  }
+
+  getListTraining(){
+    return this.myAppService.getMyConfig().getListTraining();
   }
 
 }

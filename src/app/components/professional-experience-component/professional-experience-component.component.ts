@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
-import { MyAppServicesService } from 'src/app/service/my-app-services.service';
+import { MyAppServicesService } from '../../service/my-app-services.service';
 
 @Component({
   selector: 'app-professional-experience-component',

@@ -3,12 +3,14 @@
         {
             "title": "label.training.oficial.master.title",
             "subtitle": "label.training.oficial.master.subtitle",
-            "content": "label.training.oficial.master.content"
+            "content": "label.training.oficial.master.content",
+            "tfe": "label.training.oficial.master.tfe"
         },
         {
             "title": "label.training.oficial.degree.title",
             "subtitle": "label.training.oficial.degree.subtitle",
-            "content": "label.training.oficial.degree.content"
+            "content": "label.training.oficial.degree.content",
+            "tfe": "label.training.oficial.degree.tfe"
         }
     ],
     "listExperiences":[
