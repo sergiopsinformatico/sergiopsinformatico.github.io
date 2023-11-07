@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
+import { MyAppServicesService } from './service/my-app-services.service';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +11,19 @@ import {TranslateService} from "@ngx-translate/core";
 export class AppComponent {
 
   languageChoose: string;
+  loadComponent: boolean = false;
   
-  constructor(private translate: TranslateService) {
-    this.languageChoose = navigator.language;
-    this.updateLanguageApplication();
+  constructor(
+    private translate: TranslateService,
+    private myAppService: MyAppServicesService
+  ) {
+      this.myAppService.loadMyConfig().subscribe(eConfig =>{
+        this.myAppService.setConfig(eConfig);
+        this.loadComponent = true;
+      });
+      this.languageChoose = navigator.language;
+      this.updateLanguageApplication();
+      
   }
 
   changeLanguage(langSelected: string){

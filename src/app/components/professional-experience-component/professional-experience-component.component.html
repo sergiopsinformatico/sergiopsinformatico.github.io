@@ -1,41 +1,16 @@
 <div id="profesionalExperienceComponent">
-    <div>
-        <h2>{{'label.professionalExperience.forth.date' | translate}}</h2>
-        <h1>{{'label.professionalExperience.forth.job' | translate}}</h1>
-        <span class="subtitle-style">{{'label.professionalExperience.forth.company' | translate}}</span>
-        <br>
-        <span>{{'label.professionalExperience.forth.description' | translate}}</span>
-        <br>
-        <span>{{'label.professionalExperience.forth.apptitude' | translate}}</span>
-    </div>
-    <br><br>
-    <div>
-        <h2>{{'label.professionalExperience.third.date' | translate}}</h2>
-        <h1>{{'label.professionalExperience.third.job' | translate}}</h1>
-        <span class="subtitle-style">{{'label.professionalExperience.third.company' | translate}}</span>
-        <br>
-        <span>{{'label.professionalExperience.third.description' | translate}}</span>
-        <br>
-        <span>{{'label.professionalExperience.third.apptitude' | translate}}</span>
-    </div>
-    <br><br>
-    <div>
-        <h2>{{'label.professionalExperience.second.date' | translate}}</h2>
-        <h1>{{'label.professionalExperience.second.job' | translate}}</h1>
-        <span class="subtitle-style">{{'label.professionalExperience.second.company' | translate}}</span>
-        <br>
-        <span>{{'label.professionalExperience.second.description' | translate}}</span>
-        <br>
-        <span>{{'label.professionalExperience.second.apptitude' | translate}}</span>
-    </div>
-    <br><br>
-    <div>
-        <h2>{{'label.professionalExperience.first.date' | translate}}</h2>
-        <h1>{{'label.professionalExperience.first.job' | translate}}</h1>
-        <span class="subtitle-style">{{'label.professionalExperience.first.company' | translate}}</span>
-        <br>
-        <span>{{'label.professionalExperience.first.description' | translate}}</span>
-        <br>
-        <span>{{'label.professionalExperience.first.apptitude' | translate}}</span>
-    </div>
+    <ng-container *ngIf="getListExperiences()">
+        <ng-container *ngFor="let eExperience of getListExperiences()">
+            <div>
+                <h2 class="margin-title-job">{{eExperience.date | translate}}</h2>
+                <h1 class="description-job margin-title-job">{{eExperience.job | translate}}</h1>
+                <span class="subtitle-style margin-content-job">{{eExperience.company | translate}}</span>
+                <br>
+                <span class="margin-content-job">{{eExperience.description | translate}}</span>
+                <br>
+                <span class="margin-content-job">{{eExperience.apptitude | translate}}</span>
+            </div>
+            <br><br>
+        </ng-container>
+    </ng-container>
 </div>

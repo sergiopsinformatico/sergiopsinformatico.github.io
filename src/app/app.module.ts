@@ -17,6 +17,7 @@ import { SkillsAbilitiesComponentComponent } from './components/skills-abilities
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { MyAppServicesService } from './service/my-app-services.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
         }
     })
   ],
-  providers: [],
+  providers: [MyAppServicesService],
   bootstrap: [AppComponent]
 })
 

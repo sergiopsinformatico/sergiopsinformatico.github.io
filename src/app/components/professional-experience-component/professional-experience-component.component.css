@@ -1,3 +1,15 @@
 #profesionalExperienceComponent .subtitle-style{
     font-style: italic;
 }
+
+#profesionalExperienceComponent .description-job{
+    margin-top: -20px;
+}
+
+#profesionalExperienceComponent .margin-title-job{
+    margin-left: 40px;
+}
+
+#profesionalExperienceComponent .margin-content-job{
+    margin-left: 80px;
+}
