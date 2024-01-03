@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
 
 @Component({
@@ -9,8 +9,11 @@ import {TranslateService} from "@ngx-translate/core";
 
 export class MainComponentWebsiteComponent implements OnInit{
 
+  @Output() newLanguage = new EventEmitter<string>();
+
   //Variables
-  mainTitle = "Mi Pagina Personal";
+  nameShowComponent: string = "aboutMe";
+  showDropdown: boolean = false;
 
   constructor(private translate: TranslateService){
 
@@ -19,8 +22,12 @@ export class MainComponentWebsiteComponent implements OnInit{
   ngOnInit(): void {
   }
 
-  onActiveItemChange(event: any){
-    console.log(event);
+  showComponent(componentToShow: string){
+    this.nameShowComponent = componentToShow;
+  }
+
+  changeLanguage(language: string){
+    this.newLanguage.emit(language);
   }
 
 }

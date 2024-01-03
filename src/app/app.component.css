@@ -1,9 +1,0 @@
-#appComponent .imageLanguageStyle{
-    margin-left: 5px;
-    height: 20px;
-    width: auto;
-}
-
-#appComponent .imageLanguageStyle:hover{
-    cursor: pointer;
-}

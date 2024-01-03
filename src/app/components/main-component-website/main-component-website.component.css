@@ -1,8 +1,149 @@
-.background-main-component{
+/*Responsive*/
+
+@media screen and (min-width: 700px){
+
+    #mainWebsiteLargeComponent{
+        display: flex;
+    }
+
+    #mainWebsiteSmallComponent{
+        display: none;
+    }
+
+}
+
+@media (max-width: 700px){
+
+    #mainWebsiteLargeComponent{
+        display: none;
+    }
+
+    #mainWebsiteSmallComponent{
+        display: block;
+    }
+
+}
+
+/*Large Resolutions*/
+
+/*Pagina Principal*/
+#mainWebsiteLargeComponent{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/*Panel Izquierdo - Opciones*/
+#mainWebsiteLargeComponent .panel-info-options{
+    display: inline;
+}
+
+#mainWebsiteLargeComponent .selectOptionInfo:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+#mainWebsiteLargeComponent .photoProfileStyle{
+    height: 160px;
+    width: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 40px;
+}
+
+#mainWebsiteLargeComponent .table-style-info{
+    width: 100%;
+}
+
+#mainWebsiteLargeComponent .imageLanguageStyle{
+    margin-left: 5px;
+    height: 20px;
+    width: auto;
+}
+
+#mainWebsiteLargeComponent .imageLanguageStyle:hover{
+    cursor: pointer;
+}
+
+/*Panel Derecho - Contenido*/
+#mainWebsiteLargeComponent .panel-info-content{
+    display: inline;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+/*Small Resolutions*/
+
+/*Pagina Principal*/
+#mainWebsiteSmallComponent{
     width: 100%;
     height: 100%;
 }
 
-:host ::ng-deep .background-main-component > mat-tab-group > mat-tab-header > div {
-    background: linear-gradient(70deg, #FF6B7A, #99CEFF, #99FFA7, #FAFF99);
+#mainWebsiteSmallComponent .panel-info-options{
+    height: 100px;
+}
+
+#mainWebsiteSmallComponent .photoProfileStyle{
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 10px;
+}
+
+#mainWebsiteSmallComponent .panel-info-content{
+    padding: 10px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+#mainWebsiteSmallComponent .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+#mainWebsiteSmallComponent .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(156, 235, 180);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 20px;
+}
+
+/* Links inside the dropdown */
+#mainWebsiteSmallComponent .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+#mainWebsiteSmallComponent .dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+#mainWebsiteSmallComponent .dropdown:hover .dropdown-content {
+    display: block;
+    width: max-content;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+#mainWebsiteSmallComponent .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+#mainWebsiteSmallComponent .imageLanguageStyle{
+    margin-left: 5px;
+    height: 20px;
+    width: auto;
+}
+
+#mainWebsiteSmallComponent .selectOptionInfo:hover{
+    background-color: yellow;
+    cursor: pointer;
 }

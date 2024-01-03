@@ -1,7 +1,3 @@
 <div id="appComponent" *ngIf="loadComponent">
-    <span>{{'label.chooseLanguage'|translate}}</span>
-    <img src="../assets/images/spanish-language.png" (click)="changeLanguage('es')" class="imageLanguageStyle">
-    <img src="../assets/images/english-language.png" (click)="changeLanguage('en')" class="imageLanguageStyle">
+    <app-main-component-website *ngIf="loadComponent" (newLanguage)="changeLanguage($event)"></app-main-component-website>
 </div>
-<br>
-<app-main-component-website *ngIf="loadComponent"></app-main-component-website>
