@@ -1,3 +1,11 @@
 #trainingComponent .subtitle-style{
     font-style: italic;
 }
+
+#trainingComponent .margin-title{
+    margin-left: 60px;
+}
+
+#trainingComponent .margin-content{
+    margin-left: 100px;
+}

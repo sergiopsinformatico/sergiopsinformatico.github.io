@@ -2,9 +2,9 @@
     <h1>{{'label.mainComponent.menu.skillsAbilities' | translate}}</h1>
     <ng-container *ngIf="getListAbbilities()">
         <ng-container *ngFor="let eAbbility of getListAbbilities()">
-            <div>
+            <div style="text-align: left;">
                 <br>
-                <span class="subtitle-style margin-content-job">{{eAbbility.nameAbbility | translate}}</span>
+                <span class="subtitle-style margin-title-job">{{eAbbility.nameAbbility | translate}}</span>
                 <br>
                 <span class="margin-content-job">{{eAbbility.description | translate}}</span>
                 <br>

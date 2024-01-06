@@ -1,17 +1,19 @@
 <div id="profesionalExperienceComponent">
     <h1>{{'label.mainComponent.menu.professionalExperience' | translate}}</h1>
+    <br>
     <ng-container *ngIf="getListExperiences()">
         <ng-container *ngFor="let eExperience of getListExperiences()">
-            <div>
-                <h2 class="margin-title-job">{{eExperience.date | translate}}</h2>
+            <div style="text-align: left;">
                 <h1 class="description-job margin-title-job">{{eExperience.job | translate}}</h1>
+                <h2 class="margin-title-job">{{eExperience.date | translate}}</h2>
+                <br>
                 <span class="subtitle-style margin-content-job">{{eExperience.company | translate}}</span>
                 <br>
                 <span class="margin-content-job">{{eExperience.description | translate}}</span>
                 <br>
                 <span class="margin-content-job">{{eExperience.apptitude | translate}}</span>
             </div>
-            <br><br>
+            <br><br><br>
         </ng-container>
     </ng-container>
 </div>
