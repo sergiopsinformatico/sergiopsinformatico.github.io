@@ -38,8 +38,27 @@
     display: inline;
 }
 
-#mainWebsiteLargeComponent .selectOptionInfo:hover{
-    background-color: yellow;
+#mainWebsiteLargeComponent .selectOptionInfoAboutMe.active,
+#mainWebsiteLargeComponent .selectOptionInfoAboutMe:hover{
+    background-color: #FBFFA5;
+    cursor: pointer;
+}
+
+#mainWebsiteLargeComponent .selectOptionInfoTraining.active,
+#mainWebsiteLargeComponent .selectOptionInfoTraining:hover{
+    background-color: #A5FFBC;
+    cursor: pointer;
+}
+
+#mainWebsiteLargeComponent .selectOptionInfoProfessionalExperience.active,
+#mainWebsiteLargeComponent .selectOptionInfoProfessionalExperience:hover{
+    background-color: #A5F4FF;
+    cursor: pointer;
+}
+
+#mainWebsiteLargeComponent .selectOptionInfoSkillsAbilities.active,
+#mainWebsiteLargeComponent .selectOptionInfoSkillsAbilities:hover{
+    background-color: #FF7777;
     cursor: pointer;
 }
 
@@ -53,6 +72,11 @@
 
 #mainWebsiteLargeComponent .table-style-info{
     width: 100%;
+    background-color: gainsboro;
+}
+
+#mainWebsiteLargeComponent .table-style-info > tr{
+    height: 50px;
 }
 
 #mainWebsiteLargeComponent .imageLanguageStyle{
@@ -108,11 +132,14 @@
 #mainWebsiteSmallComponent .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(156, 235, 180);
-    min-width: 160px;
+    background-color: gainsboro;
+    min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     margin-left: 20px;
+    top: 90px;
+    left: -10px;
+    border: 1px solid black;
 }
 
 /* Links inside the dropdown */
@@ -143,7 +170,30 @@
     width: auto;
 }
 
-#mainWebsiteSmallComponent .selectOptionInfo:hover{
-    background-color: yellow;
+#mainWebsiteSmallComponent .imageLanguageStyle:hover{
+    cursor: pointer;
+}
+
+#mainWebsiteSmallComponent .selectOptionInfoAboutMe.active,
+#mainWebsiteSmallComponent .selectOptionInfoAboutMe:hover{
+    background-color: #FBFFA5;
+    cursor: pointer;
+}
+
+#mainWebsiteSmallComponent .selectOptionInfoTraining.active,
+#mainWebsiteSmallComponent .selectOptionInfoTraining:hover{
+    background-color: #A5FFBC;
+    cursor: pointer;
+}
+
+#mainWebsiteSmallComponent .selectOptionInfoProfessionalExperience.active,
+#mainWebsiteSmallComponent .selectOptionInfoProfessionalExperience:hover{
+    background-color: #A5F4FF;
+    cursor: pointer;
+}
+
+#mainWebsiteSmallComponent .selectOptionInfoSkillsAbilities.active,
+#mainWebsiteSmallComponent .selectOptionInfoSkillsAbilities:hover{
+    background-color: #FF7777;
     cursor: pointer;
 }

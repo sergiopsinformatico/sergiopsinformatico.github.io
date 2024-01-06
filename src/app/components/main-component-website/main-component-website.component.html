@@ -7,23 +7,31 @@
                 </td>
             </tr>
             <tr>
-                <td class="selectOptionInfo" (click)="showComponent('aboutMe')">
+                <td class="selectOptionInfoAboutMe" (click)="showComponent('aboutMe')" [ngClass]="nameShowComponent == 'aboutMe' ? 'active' : ''">
                     <span>{{'label.mainComponent.menu.aboutMe' | translate}}</span>   
                 </td>
             </tr>
             <tr>
-                <td class="selectOptionInfo" (click)="showComponent('training')">
+                <td class="selectOptionInfoTraining" (click)="showComponent('training')" [ngClass]="nameShowComponent == 'training' ? 'active' : ''">
                     <span>{{'label.mainComponent.menu.training' | translate}}</span>
                 </td>
             </tr>
             <tr>
-                <td class="selectOptionInfo" (click)="showComponent('professionalExperience')">
+                <td class="selectOptionInfoProfessionalExperience" (click)="showComponent('professionalExperience')" [ngClass]="nameShowComponent == 'professionalExperience' ? 'active' : ''">
                     <span>{{'label.mainComponent.menu.professionalExperience' | translate}}</span>
                 </td>
             </tr>
             <tr>
-                <td class="selectOptionInfo" (click)="showComponent('skillsAbilities')">
+                <td class="selectOptionInfoSkillsAbilities" (click)="showComponent('skillsAbilities')" [ngClass]="nameShowComponent == 'skillsAbilities' ? 'active' : ''">
                     <span>{{'label.mainComponent.menu.skillsAbilities' | translate}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
                 </td>
             </tr>
             <tr>
@@ -46,14 +54,14 @@
     <div class="panel-info-options dropdown">
         <img src="../../../assets/images/photo-profile.jpg" (click)="showDropdown = !showDropdown" class="photoProfileStyle dropbtn">
         <div class="dropdown-content">
-            <span class="selectOptionInfo" (click)="showComponent('aboutMe')">{{'label.mainComponent.menu.aboutMe' | translate}}</span>
+            <span class="selectOptionInfoAboutMe" (click)="showComponent('aboutMe')" [ngClass]="nameShowComponent == 'aboutMe' ? 'active' : ''">{{'label.mainComponent.menu.aboutMe' | translate}}</span>
             <br>
-            <span class="selectOptionInfo" (click)="showComponent('training')">{{'label.mainComponent.menu.training' | translate}}</span>
+            <span class="selectOptionInfoTraining" (click)="showComponent('training')" [ngClass]="nameShowComponent == 'training' ? 'active' : ''">{{'label.mainComponent.menu.training' | translate}}</span>
             <br>
-            <span class="selectOptionInfo" (click)="showComponent('professionalExperience')">{{'label.mainComponent.menu.professionalExperience' | translate}}</span>
+            <span class="selectOptionInfoProfessionalExperience" (click)="showComponent('professionalExperience')" [ngClass]="nameShowComponent == 'professionalExperience' ? 'active' : ''">{{'label.mainComponent.menu.professionalExperience' | translate}}</span>
             <br>
-            <span class="selectOptionInfo" (click)="showComponent('skillsAbilities')">{{'label.mainComponent.menu.skillsAbilities' | translate}}</span>
-            <br>
+            <span class="selectOptionInfoSkillsAbilities" (click)="showComponent('skillsAbilities')" [ngClass]="nameShowComponent == 'skillsAbilities' ? 'active' : ''">{{'label.mainComponent.menu.skillsAbilities' | translate}}</span>
+            <br><br>
             <img src="../../../assets/images/spanish-language.png" (click)="changeLanguage('es')" class="imageLanguageStyle">
             <img src="../../../assets/images/english-language.png" (click)="changeLanguage('en')" class="imageLanguageStyle">
         </div>
