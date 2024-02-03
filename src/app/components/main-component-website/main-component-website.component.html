@@ -1,76 +1,13 @@
-<div id="mainWebsiteLargeComponent">
-    <div class="panel-info-options">
-        <table class="table-style-info">
-            <tr>
-                <td>
-                    <img src="../../../assets/images/photo-profile.jpg" class="photoProfileStyle">
-                </td>
-            </tr>
-            <tr>
-                <td class="selectOptionInfoAboutMe" (click)="showComponent('aboutMe')" [ngClass]="nameShowComponent == 'aboutMe' ? 'active' : ''">
-                    <span>{{'label.mainComponent.menu.aboutMe' | translate}}</span>   
-                </td>
-            </tr>
-            <tr>
-                <td class="selectOptionInfoTraining" (click)="showComponent('training')" [ngClass]="nameShowComponent == 'training' ? 'active' : ''">
-                    <span>{{'label.mainComponent.menu.training' | translate}}</span>
-                </td>
-            </tr>
-            <tr>
-                <td class="selectOptionInfoProfessionalExperience" (click)="showComponent('professionalExperience')" [ngClass]="nameShowComponent == 'professionalExperience' ? 'active' : ''">
-                    <span>{{'label.mainComponent.menu.professionalExperience' | translate}}</span>
-                </td>
-            </tr>
-            <tr>
-                <td class="selectOptionInfoSkillsAbilities" (click)="showComponent('skillsAbilities')" [ngClass]="nameShowComponent == 'skillsAbilities' ? 'active' : ''">
-                    <span>{{'label.mainComponent.menu.skillsAbilities' | translate}}</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../../../assets/images/spanish-language.png" (click)="changeLanguage('es')" class="imageLanguageStyle">
-                    <img src="../../../assets/images/english-language.png" (click)="changeLanguage('en')" class="imageLanguageStyle">
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="panel-info-content">
-        <app-about-me-component *ngIf="nameShowComponent == 'aboutMe'"></app-about-me-component>
-        <app-training-component *ngIf="nameShowComponent == 'training'"></app-training-component>
-        <app-professional-experience-component *ngIf="nameShowComponent == 'professionalExperience'"></app-professional-experience-component>
-        <app-skills-abilities-component *ngIf="nameShowComponent == 'skillsAbilities'"></app-skills-abilities-component>
-    </div>
-</div>
-
-<div id="mainWebsiteSmallComponent">
-    <div class="panel-info-options dropdown">
-        <img src="../../../assets/images/photo-profile.jpg" (click)="showDropdown = !showDropdown" class="photoProfileStyle dropbtn">
-        <div class="dropdown-content">
-            <span class="selectOptionInfoAboutMe" (click)="showComponent('aboutMe')" [ngClass]="nameShowComponent == 'aboutMe' ? 'active' : ''">{{'label.mainComponent.menu.aboutMe' | translate}}</span>
-            <br>
-            <span class="selectOptionInfoTraining" (click)="showComponent('training')" [ngClass]="nameShowComponent == 'training' ? 'active' : ''">{{'label.mainComponent.menu.training' | translate}}</span>
-            <br>
-            <span class="selectOptionInfoProfessionalExperience" (click)="showComponent('professionalExperience')" [ngClass]="nameShowComponent == 'professionalExperience' ? 'active' : ''">{{'label.mainComponent.menu.professionalExperience' | translate}}</span>
-            <br>
-            <span class="selectOptionInfoSkillsAbilities" (click)="showComponent('skillsAbilities')" [ngClass]="nameShowComponent == 'skillsAbilities' ? 'active' : ''">{{'label.mainComponent.menu.skillsAbilities' | translate}}</span>
-            <br><br>
-            <img src="../../../assets/images/spanish-language.png" (click)="changeLanguage('es')" class="imageLanguageStyle">
-            <img src="../../../assets/images/english-language.png" (click)="changeLanguage('en')" class="imageLanguageStyle">
-        </div>
-    </div>
-    <br>
-    <div class="panel-info-content">
-        <app-about-me-component *ngIf="nameShowComponent == 'aboutMe'"></app-about-me-component>
-        <app-training-component *ngIf="nameShowComponent == 'training'"></app-training-component>
-        <app-professional-experience-component *ngIf="nameShowComponent == 'professionalExperience'"></app-professional-experience-component>
-        <app-skills-abilities-component *ngIf="nameShowComponent == 'skillsAbilities'"></app-skills-abilities-component>
-    </div>
+<div id="mainWebsiteComponent">
+    <img src="../../../assets/images/spanish-language.png" (click)="changeLanguage('es')" class="imageLanguageStyle">
+    <img src="../../../assets/images/english-language.png" (click)="changeLanguage('en')" class="imageLanguageStyle">
+    <br><br><br>
+    <app-about-me-component></app-about-me-component>
+    <br><br><br><br><br><br><br>
+    <app-training-component></app-training-component>
+    <br><br><br><br><br><br><br>
+    <app-professional-experience-component></app-professional-experience-component>
+    <br><br><br><br><br><br><br>
+    <app-skills-abilities-component></app-skills-abilities-component>
+    <br><br><br><br><br><br>
 </div>

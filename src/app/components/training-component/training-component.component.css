@@ -1,3 +1,6 @@
+#trainingComponent .alignElements{
+    text-align: center;
+}
 #trainingComponent .subtitle-style{
     font-style: italic;
 }

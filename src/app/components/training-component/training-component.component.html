@@ -1,18 +1,21 @@
 <div id="trainingComponent">
-    <h1>{{'label.mainComponent.menu.training' | translate}}</h1>
-    <br>
-    <ng-container *ngIf="getListTraining()">
-        <ng-container *ngFor="let eTraining of getListTraining()">
-            <div style="text-align: left;">
-                <h2 class="margin-title">{{eTraining.title | translate}}</h2>
-                <span class="subtitle-style margin-content">{{eTraining.subtitle | translate}}</span>
-                <br>
-                <span class="margin-content">{{eTraining.content | translate}}</span>
-                <br>
-                <span class="subtitle-style margin-content">{{eTraining.tfe | translate}}</span>
-            </div>
-            <br><br>
+    <div class="alignElements">
+        <h1>{{'label.mainComponent.menu.training' | translate}}</h1>
+        <br>
+        <ng-container *ngIf="getListTraining()">
+            <ng-container *ngFor="let eTraining of getListTraining(); let elemLast = last;">
+                <div>
+                    <h2 class="margin-title">{{eTraining.title | translate}}</h2>
+                    <span class="subtitle-style margin-content">{{eTraining.subtitle | translate}}</span>
+                    <br>
+                    <span class="margin-content">{{eTraining.content | translate}}</span>
+                    <br>
+                    <span class="subtitle-style margin-content">{{eTraining.tfe | translate}}</span>
+                </div>
+                <br *ngIf="!elemLast">
+                <br *ngIf="!elemLast">
+            </ng-container>
         </ng-container>
-    </ng-container>
+    </div>
 </div>
 

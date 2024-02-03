@@ -1,3 +1,7 @@
+#skillAbbilitiesComponent .alignElements{
+    text-align: center;
+}
+
 #skillAbbilitiesComponent .subtitle-style{
     font-style: italic;
 }

@@ -12,18 +12,10 @@ export class MainComponentWebsiteComponent implements OnInit{
   @Output() newLanguage = new EventEmitter<string>();
 
   //Variables
-  nameShowComponent: string = "aboutMe";
-  showDropdown: boolean = false;
-
   constructor(private translate: TranslateService){
-
   }
 
   ngOnInit(): void {
-  }
-
-  showComponent(componentToShow: string){
-    this.nameShowComponent = componentToShow;
   }
 
   changeLanguage(language: string){
