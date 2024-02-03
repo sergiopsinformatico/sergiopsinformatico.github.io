@@ -8,8 +8,12 @@ export class MyConfigModel{
         this.configObj = jsonData;
     }
 
-    getListTraining(){
-        return _.has(this.configObj, 'listTraining') ? _.get(this.configObj, 'listTraining') : null;
+    getListUniversityTraining(){
+        return _.has(this.configObj, 'listUniversityTraining') ? _.get(this.configObj, 'listUniversityTraining') : null;
+    }
+
+    getListOtherTraining(){
+        return _.has(this.configObj, 'listOtherTraining') ? _.get(this.configObj, 'listOtherTraining') : null;
     }
 
     getListExperiences(){

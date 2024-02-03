@@ -14,8 +14,12 @@ export class TrainingComponentComponent {
 
   }
 
-  getListTraining(){
-    return this.myAppService.getMyConfig().getListTraining();
+  getListUniversityTraining(){
+    return this.myAppService.getMyConfig().getListUniversityTraining();
+  }
+
+  getListOtherTraining(){
+    return this.myAppService.getMyConfig().getListOtherTraining();
   }
 
 }

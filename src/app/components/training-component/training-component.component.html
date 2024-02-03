@@ -1,9 +1,11 @@
 <div id="trainingComponent">
     <div class="alignElements">
         <h1>{{'label.mainComponent.menu.training' | translate}}</h1>
-        <br>
-        <ng-container *ngIf="getListTraining()">
-            <ng-container *ngFor="let eTraining of getListTraining(); let elemLast = last;">
+        <br><br>
+        <ng-container *ngIf="getListUniversityTraining()">
+            <h2>{{'label.training.title.university' | translate}}</h2>
+            <br>
+            <ng-container *ngFor="let eTraining of getListUniversityTraining(); let elemLast = last;">
                 <div>
                     <h2 class="margin-title">{{eTraining.title | translate}}</h2>
                     <span class="subtitle-style margin-content">{{eTraining.subtitle | translate}}</span>
@@ -11,6 +13,22 @@
                     <span class="margin-content">{{eTraining.content | translate}}</span>
                     <br>
                     <span class="subtitle-style margin-content">{{eTraining.tfe | translate}}</span>
+                </div>
+                <br *ngIf="!elemLast">
+                <br *ngIf="!elemLast">
+            </ng-container>
+        </ng-container>
+        <br><br>
+        <ng-container *ngIf="getListOtherTraining()">
+            <h2>{{'label.training.title.others' | translate}}</h2>
+            <br>
+            <ng-container *ngFor="let eTraining of getListOtherTraining(); let elemLast = last;">
+                <div>
+                    <h3 class="margin-title">{{eTraining.title | translate}}</h3>
+                    <span class="subtitle-style margin-content">{{eTraining.date | translate}}</span>
+                    <br>
+                    <a href="{{eTraining.link}}">{{'label.training.link' | translate}}</a>
+                    <br>
                 </div>
                 <br *ngIf="!elemLast">
                 <br *ngIf="!elemLast">
