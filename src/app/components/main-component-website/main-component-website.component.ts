@@ -22,4 +22,14 @@ export class MainComponentWebsiteComponent implements OnInit{
     this.newLanguage.emit(language);
   }
 
+  changeActive(idNavBar: string){
+    //Update Active Navbar
+    document.getElementById('btn-nav-aboutMe')?.classList.remove('active');
+    document.getElementById('btn-nav-training')?.classList.remove('active');
+    document.getElementById('btn-nav-experience')?.classList.remove('active');
+    document.getElementById('btn-nav-abbilities')?.classList.remove('active');
+
+    document.getElementById(idNavBar)?.classList.add('active');
+  }
+
 }

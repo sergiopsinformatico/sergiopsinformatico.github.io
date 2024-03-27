@@ -1,9 +1,64 @@
-#mainWebsiteComponent .imageLanguageStyle{
-    margin-left:5px;
-    height:20px;
-    width:auto
+#mainWebsiteComponent ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#mainWebsiteComponent li {
+    float: left;
+}
+
+#mainWebsiteComponent li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#mainWebsiteComponent li a:hover:not(.active) {
+    background-color: #111;
+}
+
+#mainWebsiteComponent .active {
+    background-color: #04AA6D;
 }
 
 #mainWebsiteComponent .imageLanguageStyle:hover{
     cursor:pointer
 }
+
+@media (min-width: 650px) {
+
+    #mainWebsiteComponent .fontSizeNavbar{
+        font-size: 16px;
+    }
+
+    #mainWebsiteComponent .imageLanguageStyle{
+        margin-left:5px;
+        height:20px;
+        width: auto;
+        margin-top: 14px;
+    }
+
+  }
+
+  @media (max-width: 650px) {
+
+    #mainWebsiteComponent .fontSizeNavbar{
+        font-size: 10px;
+    }
+
+    #mainWebsiteComponent .imageLanguageStyle{
+        margin-left:5px;
+        height:20px;
+        width: auto;
+        margin-top: 10px;
+    }
+
+  }
