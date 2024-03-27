@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
 
 @Component({
@@ -6,7 +6,10 @@ import {TranslateService} from "@ngx-translate/core";
   templateUrl: './about-me-component.component.html',
   styleUrls: ['./about-me-component.component.css']
 })
+
 export class AboutMeComponentComponent {
+
+  @Output() updateNavbar = new EventEmitter<any>();
   
   constructor(private translate: TranslateService){
 

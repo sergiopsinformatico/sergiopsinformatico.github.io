@@ -1,7 +1,7 @@
-<div id="trainingComponent">
+<div id="trainingComponent" (mouseover)="updateNavbar.emit()">
     <br><br><br><br>
     <div class="alignElements">
-        <h1>{{'label.mainComponent.menu.training' | translate}}</h1>
+        <h1><i class="fa fa-graduation-cap stylesIconNavbar"></i>{{'label.mainComponent.menu.training' | translate}}</h1>
         <br><br>
         <ng-container *ngIf="getListUniversityTraining()">
             <h2>{{'label.training.title.university' | translate}}</h2>

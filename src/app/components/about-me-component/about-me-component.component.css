@@ -20,3 +20,7 @@
 #aboutMeComponent .photoRRSSStyle:hover{
     cursor: pointer;
 }
+
+#aboutMeComponent .stylesIconNavbar{
+    margin-right: 5px;
+}

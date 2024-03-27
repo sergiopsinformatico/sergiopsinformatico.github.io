@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
 import { MyAppServicesService } from '../../service/my-app-services.service';
 
@@ -8,6 +8,8 @@ import { MyAppServicesService } from '../../service/my-app-services.service';
   styleUrls: ['./skills-abilities-component.component.css']
 })
 export class SkillsAbilitiesComponentComponent {
+
+  @Output() updateNavbar = new EventEmitter<any>();
 
   constructor(private translate: TranslateService,
               private myAppService: MyAppServicesService){

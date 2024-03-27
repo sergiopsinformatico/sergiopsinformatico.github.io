@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+#skillAbbilitiesComponent .stylesIconNavbar{
+    margin-right: 5px;
+}
+
 #skillAbbilitiesComponent .subtitle-style{
     font-style: italic;
 }

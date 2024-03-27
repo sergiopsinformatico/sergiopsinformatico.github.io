@@ -1,6 +1,11 @@
 #trainingComponent .alignElements{
     text-align: center;
 }
+
+#trainingComponent .stylesIconNavbar{
+    margin-right: 5px;
+}
+
 #trainingComponent .subtitle-style{
     font-style: italic;
 }

@@ -33,6 +33,12 @@
     background-color: #04AA6D;
 }
 
+#mainWebsiteComponent .styleDivLanguage{
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+}
+
 #mainWebsiteComponent .imageLanguageStyle:hover{
     cursor:pointer
 }

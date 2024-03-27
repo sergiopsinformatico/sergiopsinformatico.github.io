@@ -1,7 +1,7 @@
-<div id="profesionalExperienceComponent">
+<div id="profesionalExperienceComponent" (mouseover)="updateNavbar.emit()">
     <br><br><br><br>
     <div class="alignElements">
-        <h1>{{'label.mainComponent.menu.professionalExperience' | translate}}</h1>
+        <h1><i class="fa fa-user-tie stylesIconNavbar"></i>{{'label.mainComponent.menu.professionalExperience' | translate}}</h1>
         <br>
         <ng-container *ngIf="getListExperiences()">
             <ng-container *ngFor="let eExperience of getListExperiences(); let elemLast = last;">

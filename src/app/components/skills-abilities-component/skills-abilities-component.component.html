@@ -1,7 +1,7 @@
-<div id="skillAbbilitiesComponent">
+<div id="skillAbbilitiesComponent" (mouseover)="updateNavbar.emit()">
     <br><br><br><br>
     <div class="alignElements">
-        <h1>{{'label.mainComponent.menu.skillsAbilities' | translate}}</h1>
+        <h1><i class="fa fa-user-gear stylesIconNavbar"></i>{{'label.mainComponent.menu.skillsAbilities' | translate}}</h1>
         <ng-container *ngIf="getListAbbilities()">
             <ng-container *ngFor="let eAbbility of getListAbbilities(); let elemLast = last;">
                 <div>

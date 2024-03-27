@@ -6,16 +6,16 @@
         <li><a id="btn-nav-abbilities" (click)="changeActive('btn-nav-abbilities')" href="#sectionAbbilities" class="fontSizeNavbar"><i class="fa fa-user-gear stylesIconNavbar"></i>{{'label.mainComponent.menu.skillsAbilities' | translate}}</a></li>
     </ul>
     <br><br>
-    <div style="position:fixed">
+    <div class="styleDivLanguage">
         <img src="../../../assets/images/spanish-language.png" (click)="changeLanguage('es')" class="imageLanguageStyle">
         <img src="../../../assets/images/english-language.png" (click)="changeLanguage('en')" class="imageLanguageStyle">
     </div>
-    <app-about-me-component id="sectionAboutMe"></app-about-me-component>
+    <app-about-me-component (updateNavbar)="changeActive('btn-nav-aboutMe')" id="sectionAboutMe"></app-about-me-component>
     <br><br>
-    <app-training-component id="sectionTraining"></app-training-component>
+    <app-training-component (updateNavbar)="changeActive('btn-nav-training')" id="sectionTraining"></app-training-component>
     <br><br>
-    <app-professional-experience-component id="sectionExperience"></app-professional-experience-component>
+    <app-professional-experience-component (updateNavbar)="changeActive('btn-nav-experience')" id="sectionExperience"></app-professional-experience-component>
     <br><br>
-    <app-skills-abilities-component id="sectionAbbilities"></app-skills-abilities-component>
+    <app-skills-abilities-component (updateNavbar)="changeActive('btn-nav-abbilities')" id="sectionAbbilities"></app-skills-abilities-component>
     <br><br>
 </div>

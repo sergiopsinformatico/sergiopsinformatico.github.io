@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+#profesionalExperienceComponent .stylesIconNavbar{
+    margin-right: 5px;
+}
+
 #profesionalExperienceComponent .subtitle-style{
     font-style: italic;
 }
