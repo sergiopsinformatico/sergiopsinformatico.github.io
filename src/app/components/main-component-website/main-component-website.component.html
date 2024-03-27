@@ -1,16 +1,15 @@
 <div id="mainWebsiteComponent">
     <ul>
-        <li><a id="btn-nav-aboutMe" (click)="changeActive('btn-nav-aboutMe')" href="#sectionAboutMe" class="fontSizeNavbar active">{{'label.mainComponent.menu.aboutMe' | translate}}</a></li>
-        <li><a id="btn-nav-training" (click)="changeActive('btn-nav-training')" href="#sectionTraining" class="fontSizeNavbar">{{'label.mainComponent.menu.training' | translate}}</a></li>
-        <li><a id="btn-nav-experience" (click)="changeActive('btn-nav-experience')" href="#sectionExperience" class="fontSizeNavbar">{{'label.mainComponent.menu.professionalExperience' | translate}}</a></li>
-        <li><a id="btn-nav-abbilities" (click)="changeActive('btn-nav-abbilities')" href="#sectionAbbilities" class="fontSizeNavbar">{{'label.mainComponent.menu.skillsAbilities' | translate}}</a></li>
-        <li style="float:right">
-            <img src="../../../assets/images/spanish-language.png" (click)="changeLanguage('es')" class="imageLanguageStyle">
-        </li>
-        <li style="float:right">
-            <img src="../../../assets/images/english-language.png" (click)="changeLanguage('en')" class="imageLanguageStyle">
-        </li>
+        <li><a id="btn-nav-aboutMe" (click)="changeActive('btn-nav-aboutMe')" href="#sectionAboutMe" class="fontSizeNavbar active"><i class="fa fa-user stylesIconNavbar"></i>{{'label.mainComponent.menu.aboutMe' | translate}}</a></li>
+        <li><a id="btn-nav-training" (click)="changeActive('btn-nav-training')" href="#sectionTraining" class="fontSizeNavbar"><i class="fa fa-graduation-cap stylesIconNavbar"></i>{{'label.mainComponent.menu.training' | translate}}</a></li>
+        <li><a id="btn-nav-experience" (click)="changeActive('btn-nav-experience')" href="#sectionExperience" class="fontSizeNavbar"><i class="fa fa-user-tie stylesIconNavbar"></i>{{'label.mainComponent.menu.professionalExperience' | translate}}</a></li>
+        <li><a id="btn-nav-abbilities" (click)="changeActive('btn-nav-abbilities')" href="#sectionAbbilities" class="fontSizeNavbar"><i class="fa fa-user-gear stylesIconNavbar"></i>{{'label.mainComponent.menu.skillsAbilities' | translate}}</a></li>
     </ul>
+    <br><br>
+    <div style="position:fixed">
+        <img src="../../../assets/images/spanish-language.png" (click)="changeLanguage('es')" class="imageLanguageStyle">
+        <img src="../../../assets/images/english-language.png" (click)="changeLanguage('en')" class="imageLanguageStyle">
+    </div>
     <app-about-me-component id="sectionAboutMe"></app-about-me-component>
     <br><br>
     <app-training-component id="sectionTraining"></app-training-component>
