@@ -1,7 +1,7 @@
 <div id="aboutMeComponent" (mouseover)="updateNavbar.emit()">
     <br><br><br>
-    <div class="alignElements">
-        <h1><i class="fa fa-user stylesIconNavbar"></i>{{'label.mainComponent.menu.aboutMe' | translate}}</h1>
+    <div>
+        <span class="titleSection"><i class="fa fa-user stylesIconNavbar"></i>{{'label.mainComponent.menu.aboutMe' | translate}}</span>
         <br>
         <img src="../../../assets/images/photo-profile.jpg" class="photoProfileStyle">
         <br>
@@ -13,7 +13,7 @@
         <br>
         <span>{{ 'label.aboutMe.work' | translate }}</span>
         <br><br>
-        <div class="alignElements">
+        <div >
             <span>{{ 'label.aboutMe.followMe' | translate }}</span>
             <br><br>
             <img src="../../../assets/images/rrss-linkedin.png" (click)="openTabUrl('https://www.linkedin.com/in/sergio-perez-sanchez/')" class="photoRRSSStyle">
