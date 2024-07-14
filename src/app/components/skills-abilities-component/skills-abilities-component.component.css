@@ -1,3 +1,11 @@
+#skillAbbilitiesComponent .alignTitleSection{
+    text-align: center;
+}
+
+#skillAbbilitiesComponent .titleSection{
+    font-size: 30px;
+}
+
 #skillAbbilitiesComponent .stylesIconNavbar{
     margin-right: 5px;
 }

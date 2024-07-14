@@ -33,10 +33,6 @@
     background-color: #04AA6D;
 }
 
-#mainWebsiteComponent .titleSection{
-    font-size: 14px;
-}
-
 #mainWebsiteComponent .styleDivLanguage{
     position: fixed;
     width: 100%;
@@ -61,20 +57,24 @@
         font-size: 16px;
     }
 
-  }
+}
 
-  @media (max-width: 650px) {
+@media (max-width: 650px) {
 
     #mainWebsiteComponent .fontSizeNavbar{
         font-size: 10px;
     }
 
-  }
+    #mainWebsiteComponent .styleDivLanguage{
+        margin-top: -11px;
+    }
 
-  @media (max-width: 470px) {
+}
+
+@media (max-width: 470px) {
 
     #mainWebsiteComponent .fontSizeNavbar{
         font-size: 6px;
     }
 
-  }
+}

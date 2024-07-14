@@ -1,3 +1,11 @@
+#profesionalExperienceComponent .alignTitleSection{
+    text-align: center;
+}
+
+#profesionalExperienceComponent .titleSection{
+    font-size: 30px;
+}
+
 #profesionalExperienceComponent .stylesIconNavbar{
     margin-right: 5px;
 }

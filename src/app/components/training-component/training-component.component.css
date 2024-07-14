@@ -1,3 +1,11 @@
+#trainingComponent .alignTitleSection{
+    text-align: center;
+}
+
+#trainingComponent .titleSection{
+    font-size: 30px;
+}
+
 #trainingComponent .stylesIconNavbar{
     margin-right: 5px;
 }

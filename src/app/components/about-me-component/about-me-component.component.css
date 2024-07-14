@@ -1,3 +1,11 @@
+#aboutMeComponent .alignTitleSection{
+    text-align: center;
+}
+
+#aboutMeComponent .titleSection{
+    font-size: 30px;
+}
+
 #aboutMeComponent .photoProfileStyle{
     height: 200px;
     width: auto;
