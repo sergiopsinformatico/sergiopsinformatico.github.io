@@ -4,11 +4,12 @@
         <span class="titleSection"><i class="fa fa-graduation-cap stylesIconNavbar"></i>{{'label.mainComponent.menu.training' | translate}}</span>
         <br><br>
         <ng-container *ngIf="getListUniversityTraining()">
-            <h2>{{'label.training.title.university' | translate}}</h2>
+            <h2><i class="fa fa-school stylesIconNavbar"></i>{{'label.training.title.university' | translate}}</h2>
             <br>
             <ng-container *ngFor="let eTraining of getListUniversityTraining(); let elemLast = last;">
                 <div>
-                    <h2 class="margin-title">{{eTraining.title | translate}}</h2>
+                    <span class="main-title margin-content">({{eTraining.date | translate}}) {{eTraining.title | translate}}</span>
+                    <br>
                     <span class="subtitle-style margin-content">{{eTraining.subtitle | translate}}</span>
                     <br>
                     <span class="margin-content">{{eTraining.content | translate}}</span>
@@ -25,7 +26,8 @@
             <br>
             <ng-container *ngFor="let eTraining of getListOtherTraining(); let elemLast = last;">
                 <div>
-                    <h3 class="margin-title">{{eTraining.title | translate}}</h3>
+                    <span class="main-title margin-content">{{eTraining.title | translate}}</span>
+                    <br>
                     <span class="subtitle-style margin-content">{{eTraining.date | translate}}</span>
                     <br>
                     <a href="{{eTraining.link}}">{{'label.training.link' | translate}}</a>
