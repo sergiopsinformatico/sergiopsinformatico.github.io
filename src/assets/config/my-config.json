@@ -1,12 +1,18 @@
 {
     "listUniversityTraining": [
         {
+            "date": "label.training.oficial.master.date",
+            "color": "green",
+            "icon": "pi pi-graduation-cap",
             "title": "label.training.oficial.master.title",
             "subtitle": "label.training.oficial.master.subtitle",
             "content": "label.training.oficial.master.content",
             "tfe": "label.training.oficial.master.tfe"
         },
         {
+            "date": "label.training.oficial.degree.date",
+            "color": "blue",
+            "icon": "pi pi-graduation-cap",
             "title": "label.training.oficial.degree.title",
             "subtitle": "label.training.oficial.degree.subtitle",
             "content": "label.training.oficial.degree.content",
