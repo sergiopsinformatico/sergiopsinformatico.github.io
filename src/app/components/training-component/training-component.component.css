@@ -2,11 +2,6 @@
     text-align: center;
 }
 
-#trainingComponent .subtitle-training{
-    font-size: 25px;
-    font-weight: bold;
-}
-
 #trainingComponent .stylesIconNavbar{
     margin-right: 5px;
 }
@@ -15,8 +10,38 @@
     font-style: italic;
 }
 
-#trainingComponent .main-title{
-    font-size: 20px;
-    font-style: italic;
-    font-weight: bold;
+@media (min-width: 768px){
+    #trainingComponent .subtitle-training{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #trainingComponent .main-title{
+        font-size: 25px;
+        font-style: italic;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 768px){
+    #trainingComponent .subtitle-training{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    #trainingComponent .main-title{
+        font-size: 20px;
+        font-style: italic;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 425px){
+    #trainingComponent .subtitle-training{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    #trainingComponent .main-title{
+        font-size: 15px;
+        font-style: italic;
+        font-weight: bold;
+    }
 }
