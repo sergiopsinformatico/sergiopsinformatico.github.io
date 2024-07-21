@@ -12,6 +12,11 @@ export class MainComponentWebsiteComponent implements OnInit{
   @Output() newLanguage = new EventEmitter<string>();
 
   //Variables
+  showSectionAboutMe:boolean = false;
+  showSectionTraining:boolean = false;
+  showSectionExperience:boolean = false;
+  showSectionAbbilities:boolean = false;
+
   constructor(private translate: TranslateService){
   }
 
@@ -20,16 +25,6 @@ export class MainComponentWebsiteComponent implements OnInit{
 
   changeLanguage(language: string){
     this.newLanguage.emit(language);
-  }
-
-  changeActive(idNavBar: string){
-    //Update Active Navbar
-    document.getElementById('btn-nav-aboutMe')?.classList.remove('active');
-    document.getElementById('btn-nav-training')?.classList.remove('active');
-    document.getElementById('btn-nav-experience')?.classList.remove('active');
-    document.getElementById('btn-nav-abbilities')?.classList.remove('active');
-
-    document.getElementById(idNavBar)?.classList.add('active');
   }
 
 }

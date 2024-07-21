@@ -1,21 +1,46 @@
 <div id="mainWebsiteComponent">
-    <ul>
-        <li><a id="btn-nav-aboutMe" (click)="changeActive('btn-nav-aboutMe')" href="#sectionAboutMe" class="fontSizeNavbar active"><i class="fa fa-user stylesIconNavbar"></i>{{'label.mainComponent.menu.aboutMe' | translate}}</a></li>
-        <li><a id="btn-nav-training" (click)="changeActive('btn-nav-training')" href="#sectionTraining" class="fontSizeNavbar"><i class="fa fa-graduation-cap stylesIconNavbar"></i>{{'label.mainComponent.menu.training' | translate}}</a></li>
-        <li><a id="btn-nav-experience" (click)="changeActive('btn-nav-experience')" href="#sectionExperience" class="fontSizeNavbar"><i class="fa fa-user-tie stylesIconNavbar"></i>{{'label.mainComponent.menu.professionalExperience' | translate}}</a></li>
-        <li><a id="btn-nav-abbilities" (click)="changeActive('btn-nav-abbilities')" href="#sectionAbbilities" class="fontSizeNavbar"><i class="fa fa-user-gear stylesIconNavbar"></i>{{'label.mainComponent.menu.skillsAbilities' | translate}}</a></li>
-    </ul>
-    <br><br>
     <div class="styleDivLanguage">
         <img src="../../../assets/images/spanish-language.png" (click)="changeLanguage('es')" class="imageLanguageStyle">
         <img src="../../../assets/images/english-language.png" (click)="changeLanguage('en')" class="imageLanguageStyle">
+        <span class="font-title-website website-name">{{ 'website.title' | translate }}</span>
     </div>
-    <app-about-me-component (updateNavbar)="changeActive('btn-nav-aboutMe')" id="sectionAboutMe"></app-about-me-component>
-    <br><br>
-    <app-training-component (updateNavbar)="changeActive('btn-nav-training')" id="sectionTraining"></app-training-component>
-    <br><br>
-    <app-professional-experience-component (updateNavbar)="changeActive('btn-nav-experience')" id="sectionExperience"></app-professional-experience-component>
-    <br><br>
-    <app-skills-abilities-component (updateNavbar)="changeActive('btn-nav-abbilities')" id="sectionAbbilities"></app-skills-abilities-component>
-    <br><br>
+    <div style="text-align: center; width: 100%; background-color: #83E666;">
+        <br><br><br>
+        <img src="../../../assets/images/photo-profile.jpg" class="photoProfileStyle">
+        <div class="titleSection">
+            <span class="fontSection">{{'label.mainComponent.menu.aboutMe' | translate}}</span>
+        </div>
+        <br><br>
+    </div>
+    <app-about-me-component *ngIf="showSectionAboutMe"></app-about-me-component>
+    <div style="text-align: center; width: 100%; background-color: #66E6C7;">
+        <br><br>
+        <i class="fa fa-graduation-cap fontSection"></i>
+        <br>
+        <div class="titleSection">
+            <span class="fontSection">{{'label.mainComponent.menu.training' | translate}}</span>
+        </div>
+        <br><br>
+    </div>
+    <app-training-component *ngIf="showSectionTraining"></app-training-component>
+    <div style="text-align: center; width: 100%; background-color: #7191FF;">
+        <br><br>
+        <i class="fa fa-user-tie fontSection"></i>
+        <br>
+        <div class="titleSection">
+            <span class="fontSection">{{'label.mainComponent.menu.professionalExperience' | translate}}</span>
+        </div>
+        <br><br>
+    </div>
+    <app-professional-experience-component *ngIf="showSectionExperience"></app-professional-experience-component>
+    <div style="text-align: center; width: 100%; background-color: #FF7171;">
+        <br><br>
+        <i class="fa fa-user-gear fontSection"></i>
+        <br>
+        <div class="titleSection">
+            <span class="fontSection">{{'label.mainComponent.menu.skillsAbilities' | translate}}</span>
+        </div>
+        <br><br>
+    </div>
+    <app-skills-abilities-component *ngIf="showSectionAbbilities"></app-skills-abilities-component>
 </div>

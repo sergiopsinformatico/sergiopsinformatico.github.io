@@ -1,8 +1,9 @@
 {
+    "website.title": "Sergio Pérez Sánchez - Mi Sitio Web",
     "label.mainComponent.menu.aboutMe": "Acerca de Mi",
     "label.mainComponent.menu.training": "Formación",
     "label.mainComponent.menu.professionalExperience": "Experiencia Profesional",
-    "label.mainComponent.menu.skillsAbilities": "Habilidades",
+    "label.mainComponent.menu.skillsAbilities": "Conocimientos, Tecnologías y Habilidades",
     "label.aboutMe.presentation": "Me llamo Sergio Pérez Sánchez y soy Ingeniero Infomático",
     "label.aboutMe.degree": "Estudié Grado en Ingeniería Informática (Mención en Ingeniería de Software) en la Escuela Superior de Informática (ESI) de Ciudad Real, UCLM",
     "label.aboutMe.muii": "Estudié Master Universitario en Ingeniería Informática (MUII) en la Escuela Superior de Informática (ESI) de Ciudad Real, UCLM",

@@ -9,8 +9,6 @@ import { MyAppServicesService } from '../../service/my-app-services.service';
 })
 export class TrainingComponentComponent {
 
-  @Output() updateNavbar = new EventEmitter<any>();
-
   constructor(private translate: TranslateService,
               private myAppService: MyAppServicesService){
 

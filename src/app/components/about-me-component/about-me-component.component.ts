@@ -8,8 +8,6 @@ import {TranslateService} from "@ngx-translate/core";
 })
 
 export class AboutMeComponentComponent {
-
-  @Output() updateNavbar = new EventEmitter<any>();
   
   constructor(private translate: TranslateService){
 

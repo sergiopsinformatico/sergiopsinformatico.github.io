@@ -10,8 +10,6 @@ import { MyAppServicesService } from '../../service/my-app-services.service';
 
 export class ProfessionalExperienceComponentComponent{
 
-  @Output() updateNavbar = new EventEmitter<any>();
-
   constructor(private translate: TranslateService,
     private myAppService: MyAppServicesService){
 

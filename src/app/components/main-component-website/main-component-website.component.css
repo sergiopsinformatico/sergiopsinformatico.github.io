@@ -1,42 +1,16 @@
-#mainWebsiteComponent .stylesIconNavbar{
-    margin-right: 5px;
-}
+/*CSS - Main Component Website*/
 
-#mainWebsiteComponent ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-#mainWebsiteComponent li {
-    float: left;
-}
-
-#mainWebsiteComponent li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-#mainWebsiteComponent li a:hover:not(.active) {
-    background-color: #111;
-}
-
-#mainWebsiteComponent .active {
-    background-color: #04AA6D;
+#mainWebsiteComponent .website-name{
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 #mainWebsiteComponent .styleDivLanguage{
     position: fixed;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #F5F382;
+    text-align: center;
 }
 
 #mainWebsiteComponent .imageLanguageStyle{
@@ -51,30 +25,75 @@
     cursor:pointer
 }
 
-@media (min-width: 650px) {
+#mainWebsiteComponent .border-option-website{
+    border: 1px solid black;
+    border-radius: 5px;
+}
 
-    #mainWebsiteComponent .fontSizeNavbar{
-        font-size: 16px;
+#mainWebsiteComponent .titleSection{
+    text-align: center;
+}
+
+#mainWebsiteComponent .fontSection{
+    font-size: 35px;
+}
+
+#mainWebsiteComponent .photoProfileStyle{
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px){
+    #mainWebsiteComponent .fontSection{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 580px){
+    #mainWebsiteComponent .fontSection{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px){
+    #mainWebsiteComponent .fontSection{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 425px){
+
+    #mainWebsiteComponent .website-name{
+        font-size: 12px;
     }
 
 }
 
-@media (max-width: 650px) {
+@media (max-width: 375px){
 
-    #mainWebsiteComponent .fontSizeNavbar{
+    #mainWebsiteComponent .website-name{
+        font-size: 12px;
+    }
+
+    #mainWebsiteComponent .fontSection{
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 320px){
+
+    #mainWebsiteComponent .website-name{
         font-size: 10px;
     }
 
-    #mainWebsiteComponent .styleDivLanguage{
-        margin-top: -11px;
+    #mainWebsiteComponent .fontSection{
+        font-size: 10px;
     }
 
 }
 
-@media (max-width: 470px) {
-
-    #mainWebsiteComponent .fontSizeNavbar{
-        font-size: 6px;
-    }
-
-}
