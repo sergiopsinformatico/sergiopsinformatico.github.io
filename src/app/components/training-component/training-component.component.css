@@ -24,7 +24,7 @@
 
 @media (max-width: 768px){
     #trainingComponent .subtitle-training{
-        font-size: 15px;
+        font-size: 19px;
         font-weight: bold;
     }
     #trainingComponent .main-title{
@@ -36,7 +36,7 @@
 
 @media (max-width: 425px){
     #trainingComponent .subtitle-training{
-        font-size: 10px;
+        font-size: 18px;
         font-weight: bold;
     }
     #trainingComponent .main-title{

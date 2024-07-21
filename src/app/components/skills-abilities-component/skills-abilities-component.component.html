@@ -1,14 +1,11 @@
 <div id="skillAbbilitiesComponent">
-    <br><br><br><br>
     <div class="alignSection">
-        <span class="titleSection"><i class="fa fa-user-gear stylesIconNavbar"></i>{{'label.mainComponent.menu.skillsAbilities' | translate}}</span>
         <ng-container *ngIf="getListAbbilities()">
             <ng-container *ngFor="let eAbbility of getListAbbilities(); let elemLast = last;">
                 <div>
+                    <span class="name-abbility"><i class="fa fa-book-bookmark name-abbility" style="margin-right: 10px"></i>{{eAbbility.nameAbbility | translate}}</span>
                     <br>
-                    <span class="subtitle-style margin-title-job">{{eAbbility.nameAbbility | translate}}</span>
-                    <br>
-                    <span class="margin-content-job">{{eAbbility.description | translate}}</span>
+                    <span class="description-abbility">{{eAbbility.description | translate}}</span>
                     <br>
                 </div>
                 <br *ngIf="!elemLast">

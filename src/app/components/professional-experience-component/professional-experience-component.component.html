@@ -1,19 +1,18 @@
 <div id="profesionalExperienceComponent">
-    <br><br><br><br>
+    <br>
     <div class="alignSection">
-        <span class="titleSection"><i class="fa fa-user-tie stylesIconNavbar"></i>{{'label.mainComponent.menu.professionalExperience' | translate}}</span>
-        <br>
         <ng-container *ngIf="getListExperiences()">
             <ng-container *ngFor="let eExperience of getListExperiences(); let elemLast = last;">
                 <div>
-                    <h1 class="description-job margin-title-job">{{eExperience.job | translate}}</h1>
-                    <h2 class="margin-title-job">{{eExperience.date | translate}}</h2>
+                    <span class="fontStyle-title"><i class="fa fa-briefcase fontStyle-title" style="margin-right: 10px"></i>{{eExperience.job | translate}}</span>
                     <br>
-                    <span class="subtitle-style margin-content-job">{{eExperience.company | translate}}</span>
+                    <span class="fontStyle-date">{{eExperience.date | translate}}</span>
                     <br>
-                    <span class="margin-content-job">{{eExperience.description | translate}}</span>
+                    <span class="fontStyle-company">{{eExperience.company | translate}}</span>
                     <br>
-                    <span class="margin-content-job">{{eExperience.apptitude | translate}}</span>
+                    <span class="fontStyle-description">{{eExperience.description | translate}}</span>
+                    <br>
+                    <span class="fontStyle-apptitude">{{eExperience.apptitude | translate}}</span>
                 </div>
                 <br *ngIf="!elemLast">
                 <br *ngIf="!elemLast">

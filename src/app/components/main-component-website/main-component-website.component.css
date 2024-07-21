@@ -77,7 +77,7 @@
 
 @media (max-width: 480px){
     #mainWebsiteComponent .fontSection{
-        font-size: 20px;
+        font-size: 22px;
     }
 
     #mainWebsiteComponent .fontAngle{
@@ -100,7 +100,7 @@
     }
 
     #mainWebsiteComponent .fontSection{
-        font-size: 15px;
+        font-size: 20px;
     }
 
     #mainWebsiteComponent .fontAngle{
@@ -116,7 +116,7 @@
     }
 
     #mainWebsiteComponent .fontSection{
-        font-size: 10px;
+        font-size: 20px;
     }
 
 }

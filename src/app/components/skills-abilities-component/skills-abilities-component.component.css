@@ -2,26 +2,44 @@
     text-align: center;
 }
 
-#skillAbbilitiesComponent .titleSection{
-    font-size: 40px;
+@media (min-width: 768px){
+
+    #skillAbbilitiesComponent .name-abbility{
+        font-style: italic;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    #skillAbbilitiesComponent .description-abbility{
+        font-size: 18px;
+    }
+
 }
 
-#skillAbbilitiesComponent .stylesIconNavbar{
-    margin-right: 5px;
+@media (max-width: 768px){
+
+    #skillAbbilitiesComponent .name-abbility{
+        font-style: italic;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    #skillAbbilitiesComponent .description-abbility{
+        font-size: 16px;
+    }
+
 }
 
-#skillAbbilitiesComponent .subtitle-style{
-    font-style: italic;
-}
+@media (max-width: 425px){
 
-#skillAbbilitiesComponent .description-job{
-    margin-top: -20px;
-}
+    #skillAbbilitiesComponent .name-abbility{
+        font-style: italic;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    #skillAbbilitiesComponent .description-abbility{
+        font-size: 14px;
+    }
 
-#skillAbbilitiesComponent .margin-title-job{
-    margin-left: 40px;
-}
-
-#skillAbbilitiesComponent .margin-content-job{
-    margin-left: 80px;
 }

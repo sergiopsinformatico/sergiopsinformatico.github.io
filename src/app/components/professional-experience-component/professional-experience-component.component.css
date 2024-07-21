@@ -2,26 +2,80 @@
     text-align: center;
 }
 
-#profesionalExperienceComponent .titleSection{
-    font-size: 40px;
+@media (min-width: 768px){
+
+    #profesionalExperienceComponent .fontStyle-title{
+        font-weight: bold;
+        font-size: 17px;
+    }
+    
+    #profesionalExperienceComponent .fontStyle-date{
+        font-size: 16px;
+    }
+    
+    #profesionalExperienceComponent .fontStyle-company{
+        font-style: italic;
+        font-size: 15px;
+    }
+    
+    #profesionalExperienceComponent .fontStyle-description{
+        font-size: 15px;
+    }
+    
+    #profesionalExperienceComponent .fontStyle-apptitude{
+        font-size: 15px;
+    }
+
 }
 
-#profesionalExperienceComponent .stylesIconNavbar{
-    margin-right: 5px;
+@media (max-width: 768px){
+
+    #profesionalExperienceComponent .fontStyle-title{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    #profesionalExperienceComponent .fontStyle-date{
+        font-size: 15px;
+    }
+    
+    #profesionalExperienceComponent .fontStyle-company{
+        font-style: italic;
+        font-size: 14px;
+    }
+    
+    #profesionalExperienceComponent .fontStyle-description{
+        font-size: 14px;
+    }
+    
+    #profesionalExperienceComponent .fontStyle-apptitude{
+        font-size: 14px;
+    }
+
 }
 
-#profesionalExperienceComponent .subtitle-style{
-    font-style: italic;
-}
+@media (max-width: 375px){
 
-#profesionalExperienceComponent .description-job{
-    margin-top: -20px;
-}
+    #profesionalExperienceComponent .fontStyle-title{
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    #profesionalExperienceComponent .fontStyle-date{
+        font-size: 14px;
+    }
+    
+    #profesionalExperienceComponent .fontStyle-company{
+        font-style: italic;
+        font-size: 12px;
+    }
+    
+    #profesionalExperienceComponent .fontStyle-description{
+        font-size: 12px;
+    }
+    
+    #profesionalExperienceComponent .fontStyle-apptitude{
+        font-size: 12px;
+    }
 
-#profesionalExperienceComponent .margin-title-job{
-    margin-left: 40px;
-}
-
-#profesionalExperienceComponent .margin-content-job{
-    margin-left: 80px;
 }
