@@ -27,4 +27,37 @@ export class MainComponentWebsiteComponent implements OnInit{
     this.newLanguage.emit(language);
   }
 
+  openSection(sectionName: string){
+    switch(sectionName){
+      case 'aboutMe':{
+        this.showSectionAboutMe = !this.showSectionAboutMe;
+        this.showSectionTraining = false;
+        this.showSectionExperience = false;
+        this.showSectionAbbilities = false;
+        break;
+      }
+      case 'training':{
+        this.showSectionAboutMe = false;
+        this.showSectionTraining = !this.showSectionTraining;
+        this.showSectionExperience = false;
+        this.showSectionAbbilities = false;
+        break;
+      }
+      case 'professionalExperience':{
+        this.showSectionAboutMe = false;
+        this.showSectionTraining = false;
+        this.showSectionExperience = !this.showSectionExperience;
+        this.showSectionAbbilities = false;
+        break;
+      }
+      case 'skillsAbilities':{
+        this.showSectionAboutMe = false;
+        this.showSectionTraining = false;
+        this.showSectionExperience = false;
+        this.showSectionAbbilities = !this.showSectionAbbilities;
+        break;
+      }
+    }
+  }
+
 }

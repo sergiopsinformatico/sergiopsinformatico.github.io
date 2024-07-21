@@ -2,8 +2,9 @@
     text-align: center;
 }
 
-#trainingComponent .titleSection{
-    font-size: 40px;
+#trainingComponent .subtitle-training{
+    font-size: 25px;
+    font-weight: bold;
 }
 
 #trainingComponent .stylesIconNavbar{
@@ -18,8 +19,4 @@
     font-size: 20px;
     font-style: italic;
     font-weight: bold;
-}
-
-#trainingComponent .margin-content{
-    margin-left: 100px;
 }

@@ -8,39 +8,55 @@
         <br><br><br>
         <img src="../../../assets/images/photo-profile.jpg" class="photoProfileStyle">
         <div class="titleSection">
-            <span class="fontSection">{{'label.mainComponent.menu.aboutMe' | translate}}</span>
+            <span class="fontSection boldSection">{{'label.mainComponent.menu.aboutMe' | translate}}</span>
         </div>
+        <br>
+        <app-about-me-component *ngIf="showSectionAboutMe"></app-about-me-component>
+        <br>
+        <i class="fa fa-angle-down fontAngle" *ngIf="!showSectionAboutMe" (click)="openSection('aboutMe')"></i>
+        <i class="fa fa-angle-up fontAngle" *ngIf="showSectionAboutMe" (click)="openSection('aboutMe')"></i>
         <br><br>
     </div>
-    <app-about-me-component *ngIf="showSectionAboutMe"></app-about-me-component>
     <div style="text-align: center; width: 100%; background-color: #66E6C7;">
         <br><br>
         <i class="fa fa-graduation-cap fontSection"></i>
         <br>
         <div class="titleSection">
-            <span class="fontSection">{{'label.mainComponent.menu.training' | translate}}</span>
+            <span class="fontSection boldSection">{{'label.mainComponent.menu.training' | translate}}</span>
         </div>
+        <br>
+        <app-training-component *ngIf="showSectionTraining"></app-training-component>
+        <br>
+        <i class="fa fa-angle-down fontAngle" *ngIf="!showSectionTraining" (click)="openSection('training')"></i>
+        <i class="fa fa-angle-up fontAngle" *ngIf="showSectionTraining" (click)="openSection('training')"></i>
         <br><br>
     </div>
-    <app-training-component *ngIf="showSectionTraining"></app-training-component>
     <div style="text-align: center; width: 100%; background-color: #7191FF;">
         <br><br>
         <i class="fa fa-user-tie fontSection"></i>
         <br>
         <div class="titleSection">
-            <span class="fontSection">{{'label.mainComponent.menu.professionalExperience' | translate}}</span>
+            <span class="fontSection boldSection">{{'label.mainComponent.menu.professionalExperience' | translate}}</span>
         </div>
+        <br>
+        <app-professional-experience-component *ngIf="showSectionExperience"></app-professional-experience-component>
+        <br>
+        <i class="fa fa-angle-down fontAngle" *ngIf="!showSectionExperience" (click)="openSection('professionalExperience')"></i>
+        <i class="fa fa-angle-up fontAngle" *ngIf="showSectionExperience" (click)="openSection('professionalExperience')"></i>
         <br><br>
     </div>
-    <app-professional-experience-component *ngIf="showSectionExperience"></app-professional-experience-component>
     <div style="text-align: center; width: 100%; background-color: #FF7171;">
         <br><br>
         <i class="fa fa-user-gear fontSection"></i>
         <br>
         <div class="titleSection">
-            <span class="fontSection">{{'label.mainComponent.menu.skillsAbilities' | translate}}</span>
+            <span class="fontSection boldSection">{{'label.mainComponent.menu.skillsAbilities' | translate}}</span>
         </div>
+        <br>
+        <app-skills-abilities-component *ngIf="showSectionAbbilities"></app-skills-abilities-component>
+        <br>
+        <i class="fa fa-angle-down fontAngle" *ngIf="!showSectionAbbilities" (click)="openSection('skillsAbilities')"></i>
+        <i class="fa fa-angle-up fontAngle" *ngIf="showSectionAbbilities" (click)="openSection('skillsAbilities')"></i>
         <br><br>
     </div>
-    <app-skills-abilities-component *ngIf="showSectionAbbilities"></app-skills-abilities-component>
 </div>

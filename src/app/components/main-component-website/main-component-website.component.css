@@ -38,6 +38,14 @@
     font-size: 35px;
 }
 
+#mainWebsiteComponent .boldSection{
+    font-weight: bold;
+}
+
+#mainWebsiteComponent .fontAngle{
+    font-size: 30px;
+}
+
 #mainWebsiteComponent .photoProfileStyle{
     height: 100px;
     width: auto;
@@ -51,17 +59,29 @@
     #mainWebsiteComponent .fontSection{
         font-size: 30px;
     }
+
+    #mainWebsiteComponent .fontAngle{
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 580px){
     #mainWebsiteComponent .fontSection{
         font-size: 25px;
     }
+
+    #mainWebsiteComponent .fontAngle{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 480px){
     #mainWebsiteComponent .fontSection{
         font-size: 20px;
+    }
+
+    #mainWebsiteComponent .fontAngle{
+        font-size: 15px;
     }
 }
 
@@ -81,6 +101,10 @@
 
     #mainWebsiteComponent .fontSection{
         font-size: 15px;
+    }
+
+    #mainWebsiteComponent .fontAngle{
+        font-size: 10px;
     }
 
 }

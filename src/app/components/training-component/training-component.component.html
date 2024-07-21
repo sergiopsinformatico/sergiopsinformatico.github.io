@@ -1,34 +1,35 @@
 <div id="trainingComponent">
-    <br><br><br><br>
     <div class="alignSection">
-        <span class="titleSection"><i class="fa fa-graduation-cap stylesIconNavbar"></i>{{'label.mainComponent.menu.training' | translate}}</span>
-        <br><br>
         <ng-container *ngIf="getListUniversityTraining()">
-            <h2><i class="fa fa-school stylesIconNavbar"></i>{{'label.training.title.university' | translate}}</h2>
+            <div style="text-align: center;">
+                <span class="subtitle-training"><i class="fa fa-school stylesIconNavbar"></i>{{'label.training.title.university' | translate}}</span>
+            </div>
             <br>
-            <ng-container *ngFor="let eTraining of getListUniversityTraining(); let elemLast = last;">
-                <div>
-                    <span class="main-title margin-content">({{eTraining.date | translate}}) {{eTraining.title | translate}}</span>
+            <div>
+                <ng-container *ngFor="let eTraining of getListUniversityTraining(); let elemLast = last;">
+                    <span class="main-title"><i class="fa fa-certificate" style="margin-right: 10px"></i>({{eTraining.date | translate}}) {{eTraining.title | translate}}</span>
                     <br>
-                    <span class="subtitle-style margin-content">{{eTraining.subtitle | translate}}</span>
+                    <span class="subtitle-style">{{eTraining.subtitle | translate}}</span>
                     <br>
-                    <span class="margin-content">{{eTraining.content | translate}}</span>
+                    <span>{{eTraining.content | translate}}</span>
                     <br>
-                    <span class="subtitle-style margin-content">{{eTraining.tfe | translate}}</span>
-                </div>
-                <br *ngIf="!elemLast">
-                <br *ngIf="!elemLast">
-            </ng-container>
+                    <span class="subtitle-style">{{eTraining.tfe | translate}}</span>
+                    <br *ngIf="!elemLast">
+                    <br *ngIf="!elemLast">
+                </ng-container>
+            </div>
         </ng-container>
         <br><br>
         <ng-container *ngIf="getListOtherTraining()">
-            <h2>{{'label.training.title.others' | translate}}</h2>
+            <div style="text-align: center;">
+                <span class="subtitle-training"><i class="fa fa-building-columns stylesIconNavbar"></i>{{'label.training.title.others' | translate}}</span>
+            </div>
             <br>
             <ng-container *ngFor="let eTraining of getListOtherTraining(); let elemLast = last;">
                 <div>
-                    <span class="main-title margin-content">{{eTraining.title | translate}}</span>
+                    <span class="main-title"><i class="fa fa-certificate" style="margin-right: 10px"></i>{{eTraining.title | translate}}</span>
                     <br>
-                    <span class="subtitle-style margin-content">{{eTraining.date | translate}}</span>
+                    <span class="subtitle-style">{{eTraining.date | translate}}</span>
                     <br>
                     <a href="{{eTraining.link}}">{{'label.training.link' | translate}}</a>
                     <br>
