@@ -1,0 +1,92 @@
+{
+    "listUniversityTraining": [
+        {
+            "date": "label.training.oficial.master.date",
+            "title": "label.training.oficial.master.title",
+            "subtitle": "label.training.oficial.master.subtitle",
+            "content": "label.training.oficial.master.content",
+            "tfe": "label.training.oficial.master.tfe"
+        },
+        {
+            "date": "label.training.oficial.degree.date",
+            "title": "label.training.oficial.degree.title",
+            "subtitle": "label.training.oficial.degree.subtitle",
+            "content": "label.training.oficial.degree.content",
+            "tfe": "label.training.oficial.degree.tfe"
+        }
+    ],
+    "listOtherTraining": [
+        {
+            "title": "label.training.other.course.ionic.title",
+            "date": "label.training.other.course.ionic.date",
+            "link": "https://sergiopsinformatico.github.io/assets/certificados/certificado-udemy-03-certificate-ionic.pdf"
+        },
+        {
+            "title": "label.training.other.course.typescript.title",
+            "date": "label.training.other.course.typescript.date",
+            "link": "https://sergiopsinformatico.github.io/assets/certificados/certificado-udemy-01-introduccion-typescript.pdf"
+        },
+        {
+            "title": "label.training.other.course.plsql.title",
+            "date": "label.training.other.course.plsql.date",
+            "link": "https://sergiopsinformatico.github.io/assets/certificados/certificado-udemy-02-certificate-pl-sql.pdf"
+        },
+        {
+            "title": "label.training.other.course.bigdata.title",
+            "date": "label.training.other.course.bigdata.date",
+            "link": "https://sergiopsinformatico.github.io/assets/certificados/certificado-unimooc-01-big-data.pdf"
+        }
+    ],
+    "listExperiences":[
+        {
+            "date": "label.professionalExperience.forth.date",
+            "job": "label.professionalExperience.forth.job",
+            "company": "label.professionalExperience.forth.company",
+            "description": "label.professionalExperience.forth.description",
+            "apptitude": "label.professionalExperience.forth.apptitude"
+        },
+        {
+            "date": "label.professionalExperience.third.date",
+            "job": "label.professionalExperience.third.job",
+            "company": "label.professionalExperience.third.company",
+            "description": "label.professionalExperience.third.description",
+            "apptitude": "label.professionalExperience.third.apptitude"
+        },
+        {
+            "date": "label.professionalExperience.second.date",
+            "job": "label.professionalExperience.second.job",
+            "company": "label.professionalExperience.second.company",
+            "description": "label.professionalExperience.second.description",
+            "apptitude": "label.professionalExperience.second.apptitude"
+        },
+        {
+            "date": "label.professionalExperience.first.date",
+            "job": "label.professionalExperience.first.job",
+            "company": "label.professionalExperience.first.company",
+            "description": "label.professionalExperience.first.description",
+            "apptitude": "label.professionalExperience.first.apptitude"
+        }    
+    ],
+    "listAbbilities":[
+        {
+            "nameAbbility": "label.abbility.developmentAngular.name",
+            "description": "label.abbility.developmentAngular.description"
+        },
+        {
+            "nameAbbility": "label.abbility.trainingProjects.name",
+            "description": "label.abbility.trainingProjects.description"
+        },
+        {
+            "nameAbbility": "label.abbility.tests.name",
+            "description": "label.abbility.tests.description"
+        },
+        {
+            "nameAbbility": "label.abbility.security.name",
+            "description": "label.abbility.security.description"
+        },
+        {
+            "nameAbbility": "label.abbility.healthcare.name",
+            "description": "label.abbility.healthcare.description"
+        }
+    ]
+}
